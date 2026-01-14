@@ -12,6 +12,8 @@ public class BaseContext {
         return threadLocal.get();
     }
 
+
+    // 移除当前线程的线程局部变量
     public static void removeCurrentId() {
         threadLocal.remove();
     }

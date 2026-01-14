@@ -163,7 +163,7 @@ public class WeChatPayUtil {
      * @param openid      微信用户的openid
      * @return
      */
-    public JSONObject pay(String orderNum, BigDecimal total, String description, String openid) throws Exception {
+    public  JSONObject pay(String orderNum, BigDecimal total, String description, String openid) throws Exception {
         //统一下单，生成预支付交易单
         String bodyAsString = jsapi(orderNum, total, description, openid);
         //解析返回结果
